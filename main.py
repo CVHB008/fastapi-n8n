@@ -53,7 +53,7 @@ def patch_item(item_id: int, item: UpdateItem):
     if item_id not in my_cars:
         raise HTTPException(status_code=404, detail="Item not found")
 
-    current_item = my_cars[item_id]
+    current_item = item[item_id]
 
     # Only update provided fields
     if item.name is not None:
