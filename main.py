@@ -63,7 +63,7 @@ def patch_item(item_id: int, item: UpdateItem):
     if item.tint != None:
         my_cars[item_id].tint = item.tint
 
-    return current_item
+    return my_cars[item_id]
 
 @app.put("/update-item/{item_id}")
 def update_item(item_id:int, item:UpdateItem):
