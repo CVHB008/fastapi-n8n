@@ -1,0 +1,62 @@
+{
+  "1": {
+    "name": "Toyota",
+    "model": 2020,
+    "price": 15000.0,
+    "tint": true
+  },
+  "2": {
+    "name": "Honda",
+    "model": 2021,
+    "price": 18000.0,
+    "tint": false
+  },
+  "3": {
+    "name": "Ford",
+    "model": 2019,
+    "price": 13000.0,
+    "tint": true
+  },
+  "4": {
+    "name": "BMW",
+    "model": 2022,
+    "price": 35000.0,
+    "tint": true
+  },
+  "5": {
+    "name": "Mercedes",
+    "model": 2021,
+    "price": 40000.0,
+    "tint": false
+  },
+  "6": {
+    "name": "Hyundai",
+    "model": 2020,
+    "price": 12000.0,
+    "tint": true
+  },
+  "7": {
+    "name": "Kia",
+    "model": 2021,
+    "price": 14000.0,
+    "tint": false
+  },
+  "8": {
+    "name": "Tesla",
+    "model": 2023,
+    "price": 50000.0,
+    "tint": true
+  },
+  "9": {
+    "name": "Chevrolet",
+    "model": 2018,
+    "price": 11000.0,
+    "tint": false
+  },
+  "10": {
+    "name": "Nissan",
+    "model": 2022,
+    "price": 16000.0,
+    "tint": true
+  }
+}
