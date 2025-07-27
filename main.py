@@ -48,6 +48,25 @@ def create_item(item_id:int, item:Item):
     my_cars[item_id] = item
     return my_cars[item_id]
 
+@app.patch("/patch-item/{item_id}")
+def patch_item(item_id: int, item: UpdateItem):
+    if item_id not in my_cars:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    current_item = my_cars[item_id]
+
+    # Only update provided fields
+    if item.name is not None:
+        current_item["name"] = item.name
+    if item.model is not None:
+        current_item["model"] = item.model
+    if item.price is not None:
+        current_item["price"] = item.price
+    if item.tint is not None:
+        current_item["tint"] = item.tint
+
+    return current_item
+
 @app.put("/update-item/{item_id}")
 def update_item(item_id:int, item:UpdateItem):
     if item_id not in my_cars:
